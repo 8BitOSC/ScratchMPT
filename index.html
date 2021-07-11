@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Scratch Multi-Purpose Tool</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+<meta property="og:url" content="http://8bitjake.github.io/ScratchMPT" />
+            <meta property="og:type" content="website" />
+            <meta property="og:title" content="Scratch Multi-Purpose Tool"/>
+            <meta property="og:description" content="A multi-purpose tool for viewing, downloading, and exploring Scratch projects." />
+        </head>
+    <body>
+        <div class="info">
+        <span id="name"></span>
+        <br>
+        <span id="creator"></span>
+    </div>
+            <div id="content">
+            <h1><span style="color:orange">Scratch</span> Multi-Purpose Tool v<span id="version"></span></h1>
+            <p>A multi-purpose tool for viewing, downloading, and exploring <span style="color:orange">Scratch</span> projects.</p>
+            <input type="text" id="projectID" class="text" placeholder="545286833" onkeydown="validateNumber(event);"></input>
+            <button onclick='downloadProject(document.getElementById("projectID").value)'>Download .sb3</button>
+            <button onclick='loadEmbed(document.getElementById("projectID").value)'>Load Project Embed</button>
+            <button onclick='seeInside(document.getElementById("projectID").value)' style="position:relative; top:6px;"><img style="position:relative; bottom:1px;" draggable="false" src="https://turbowarp.org/static/assets/2f9cda00a530ac237fc24063067377c3.svg" height="20px" width="20px"><span style="position:relative; bottom:6px;">See inside of project</span></button>
+            <div id="in-and-stats">
+            <div id="in"></div>
+        <br>
+        <div id="stats">
+            <span><strong>Project Stats</strong></span>
+            <br>
+    <img src="https://scratch.mit.edu/svgs/project/love-gray.svg" class="counter-img"><span id="love-count" class="stats"></span>
+<br>
+<img src="https://scratch.mit.edu/svgs/project/fav-gray.svg" class="counter-img"><span id="fav-count" class="stats"></span>
+<br>
+<img src="https://scratch.mit.edu/svgs/project/remix-gray.svg" class="counter-img"><span id="remix-count" class="stats"></span>
+<br>
+<img src="https://scratch.mit.edu/svgs/project/views-gray.svg" class="counter-img"><span id="view-count" class="stats"></span>
+</div>
+</div>
+            <div id="desc"></div>
+            <div id="iframe"><br><iframe src="https://turbowarp.org/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe></div>
+            <iframe id="download" style="display:none;"></iframe>
+            <span class="tip">Tip: If the project doesn't download, it might be because of one of the following reasons:
+                <p id="reasons"></p>
+            </span>
+            <p>Can't find a project you're looking for? Search Scratch for it!</p>
+            <img src="https://scratch.mit.edu/images/nav-search-glass.png" style="width:15px; height: auto; position:relative; right:5px;"><input type="text" class="text" id="search" placeholder="Search projects here..." onkeydown="validateNumber(event);"></input>
+    </div>
+        <script type="text/javascript" src="index.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,82 @@
+* {
+    transition: all 0.05s ease;
+}
+body {
+        font-family: 'Roboto';
+        text-align: center;
+        background-color: #262626;
+        color:white;
+}
+
+#content {
+    position:sticky;
+    top:75px;
+}
+
+button {
+        white-space: nowrap;
+        background-color:#4D97FF;
+        border:0px;
+        color:white;
+        height:20px;
+        cursor:pointer;
+    }
+
+
+button:hover {
+        background-color:#3f7bcf;
+    }
+
+.info {
+    position: static;
+}
+
+a {
+    text-decoration: none;
+}
+
+#desc {
+    width: 485;
+    height: 402;
+    position:absolute;
+    right:100px;
+    top:125px;
+    overflow:auto;
+}
+
+#in {
+    width: 485;
+    height: 201;
+    overflow:auto;
+}
+
+#in-and-stats {
+    position:absolute;
+    left:100px;
+    top:125px;
+}
+
+.stats {
+    position: relative;
+    bottom:5px;
+}
+
+#name {
+    font-weight: bold;
+}
+
+.counter-img {
+    width:20px;
+    height: auto;
+    filter: brightness(5);
+}
+
+.text {
+    background-color:#141414;
+    border:#1a1919;
+    color: white;
+}
+
+a {
+    color: #40b5ff;
+}

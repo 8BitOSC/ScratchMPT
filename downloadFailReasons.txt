@@ -1,0 +1,5 @@
+The project doesn't exist.
+<br>
+The project uses an outdated file format for <code>.sb3</code> files.
+<br>
+The project uses something not present in current versions of <span style="color:orange">Scratch</span>.
